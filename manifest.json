@@ -1,0 +1,19 @@
+{
+    "name": "goodbye-myelt",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "An extension to ignore MyELT errors",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://myelt.heinle.com/**/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        "patch.js"
+    ]
+}
